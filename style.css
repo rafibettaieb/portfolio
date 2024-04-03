@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background: url("photo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+header{
+    background: transparent;
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header img{
+    width: 200px;
+    height: 100px;
+}
+nav a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 100px;
+    font-weight: bold;
+    transform: 0.5s;
+}
+nav a:hover , nav a.active{
+    color: #00abf0;
+}
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home div {
+    max-width: 600px;
+}
+.home div h1{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Roboto',sans-serif;
+}
+.home div h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home div p{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+}
+.home div .btn{
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+}
+.btn a{
+    position: relative;
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 5px solid #00abf0;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00abf0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn a::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn a:hover::before{
+    width: 100%;
+}
+.btn a:hover{
+    color: black;
+}
+
+#about{
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+}
+.lang h3{
+    color: yellowgreen;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', Times, serif;    
+    padding: 10px;
+}
+.lang li{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.prog h3{
+    color: yellowgreen;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', Times, serif;
+    padding: 10px;
+}
+.prog li{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tab caption{
+    color:yellowgreen;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.tab .en-tete{
+    color: #00abf0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tab th{
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.act h3{
+    color: yellowgreen;
+    font-size: 30px;
+    padding: 10px;
+}
+.act p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#contact{
+    text-align: center;
+}
+#contact h1{
+    color: yellowgreen;
+    font-size: 30px;
+}
+#contact p{
+    font-size: 20px;
+    color: #00abf0;
+}
+#contact form input{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#contact label{
+    font-size: 20px;
+    padding: 10px;
+}
+#contact .send{
+    width: 100px;
+    height: 50px;
+    border: 3px solid #00abf0;
+    border-radius: 15%;
+}
+#txt{
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+    margin-top: 10px;
+    border: 3px solid #00abf0;
+    border-radius: 15%;
+}
+.icons{
+    padding-top: 10px;
+}
+.icons a{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
